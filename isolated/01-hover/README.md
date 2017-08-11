@@ -1,6 +1,8 @@
 # CSS - Exercice isolé 01 - Effets de hover #
 
-Un exercice pour revoir des notions comme :
+## Objectif ##
+
+Réussir à reproduire les effets de hover présents sur cette page en utilisant les propriétés CSS suivantes  :
 
 - le positionnement
 - ::before & ::after
@@ -8,6 +10,9 @@ Un exercice pour revoir des notions comme :
 - transform
 - les dégradés de fond
 - etc.
+
+
+## Résultat ##
 
 [Visualiser le résultat](http://cepegra-labs.be/webdesign/git/isolated/01-hover/index.html)
 

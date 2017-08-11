@@ -1,0 +1,175 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, header {
+	height: 100%;
+}
+header {
+	position: relative;
+	overflow: hidden;
+}
+header::before {
+	content: '';
+	background: linear-gradient(to bottom right, #0b486b, #f56217);
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	opacity: 0.6;
+	z-index: 10;
+}
+video {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 11;
+	max-width: 75%;
+}
+
+
+button {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: transparent;
+	border: 2px solid rgba(255,255,255,0.75);
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 20;
+	transition: .3s ease-in-out;
+	overflow: hidden;
+}
+button:hover, button:focus {
+	border: 2px solid yellowgreen;
+	outline: none;
+}
+
+button div {
+	width: 75%;
+	height: 3px;
+	background: #fff;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .2s ease-in-out;
+}
+
+
+button div:first-child {
+	top: 30%;
+}
+
+button:hover div:first-child {
+	transition: .2s top ease-in-out, .2s transform ease-in-out .5s;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+button div:first-child+div {
+	top: 50%;
+}
+button:hover div:first-child+div {
+	left: -100%;
+}
+
+
+button div:last-child {
+	top: 70%;
+}
+button:hover div:last-child {
+	transition: .2s top ease-in-out, .2s transform ease-in-out .5s;
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+
+button:hover div:first-child, button:hover div:last-child {
+	top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	background: transparent;
+	top: 20px;
+	right: 20px;
+	border: 2px solid rgba(255,255,255,0.75);
+	z-index: 13;
+	cursor: pointer;
+	overflow: hidden;
+	transition: .2s ease-in-out;
+	border-radius: 5px;
+}
+button div {
+	background: #fff;
+	width: 75%;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 5px;
+	
+}
+button div:nth-of-type(1) {
+	top: 30%;
+	transform: translate(-50%,-50%);
+	
+}
+button div:nth-of-type(2) {
+	top: 50%;
+	transform: translate(-50%,-50%);
+	transition: .2s ease-in-out;
+}
+button div:nth-of-type(3) {
+	top: 70%;
+	transform: translate(-50%,-50%);
+	
+}
+
+button:hover {
+	border-color: yellowgreen;
+}
+button:hover div:nth-of-type(1) {
+	top: 50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+	transition: .2s top ease-in-out, .2s transform ease-in-out .3s;
+}
+button:hover div:nth-of-type(2) {
+	left: -100%;
+}
+button:hover div:nth-of-type(3) {
+	top: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	transition: .2s top ease-in-out, .2s transform ease-in-out .3s;
+} */
