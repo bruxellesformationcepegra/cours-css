@@ -26,7 +26,7 @@ Reproduire le plus fidèlement possible la page d'accueil avec les techniques vu
 
 ## Résultat ##
 
-[Visualiser la correction](http://cepegra-labs.be/webdesign/git/full/01-molly/index.html)
+[Visualiser la correction](cepegra-labs.be/webdesign/git/full/02-responsible-drinking/index.html)
 
 Envie de participer à la co-construction du contenu ? Faites une pull request ! 
 
