@@ -1,6 +1,6 @@
 # CSS - Exercice complet 01 - Molly & Me Pecans #
 
-(http://cepegra-labs.be/webdesign/git/full/01-molly/img/molly-git.jpg)
+![Molly & Me Pecans](http://cepegra-labs.be/webdesign/git/full/01-molly/img/molly-git.jpg)
 
 ## Site Original ##
 
