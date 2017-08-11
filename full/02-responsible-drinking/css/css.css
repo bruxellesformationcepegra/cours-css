@@ -1,0 +1,13 @@
+/* Séquence d'animation / étapes */
+@keyframes arrowHeader {
+	from {margin-bottom:-10px;}
+	to   {margin-bottom:0;}
+}
+
+
+/* L'application */
+.intro:after {
+	content: '';
+	-webkit-animation: arrowHeader .5s ease-in-out 1 alternate;
+	animation: arrowHeader .5s ease-in-out 1 alternate;
+}
