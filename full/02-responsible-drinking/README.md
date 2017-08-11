@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CSS - Exercice complet 01 - Molly & Me Pecans #
 
 ![Molly & Me Pecans](http://cepegra-labs.be/webdesign/git/full/01-molly/img/molly-git.jpg)
@@ -5,6 +6,15 @@
 ## Site Original ##
 
 [Molly & Me Pecans](http://mollyandmepecans.com/)
+=======
+# CSS - Exercice complet 02 - Responsible drinking #
+
+![Responsbile Drinking](http://cepegra-labs.be/webdesign/git/full/02-responsible-drinking/img/responsible-git.jpg)
+
+## Site Original ##
+
+[Responsbile Drinking](http://www.responsibledrinking.eu/)
+>>>>>>> origin/master
 
 ## Objectif ##
 
@@ -17,6 +27,10 @@ Reproduire le plus fidèlement possible la page d'accueil avec les techniques vu
 - Transition
 - Transform
 - Background-size
+<<<<<<< HEAD
+=======
+- ::before et ::after
+>>>>>>> origin/master
 
 ## Certaines choses ne sont pas encore réalisables : ##
 
