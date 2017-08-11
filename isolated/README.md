@@ -1,13 +1,12 @@
-# Effets de hover #
+# CSS - Exercices isolés #
 
-Exercice isolé pour s'exercer avec :
+Vous trouverez ici tous les exercices isolés que nous avons réalisés ensemble en CSS :
 
-- ::before et ::after
-- le positionnement en absolu / relatif
-- overflow
-- les transitions
-- transform (rotate, translate et scale)
-- les dégradés de fond
+- Effets de hover
+- Menu burger
+- Flex
+- Animation
+etc.
 
 Envie de participer à la co-construction du contenu ? Faites une pull request ! 
 
