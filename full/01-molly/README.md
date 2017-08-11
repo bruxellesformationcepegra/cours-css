@@ -14,6 +14,7 @@ Reproduire le plus fidèlement possible la page d'accueil avec les techniques vu
 - Display
 - Transition
 - Transform
+- Background-size
 
 ## Certaines choses ne sont pas encore réalisables : ##
 
