@@ -1,11 +1,12 @@
-# CSS - Exercices isolé 01 - Effets de hover #
+# CSS - Exercice isolé 01 - Effets de hover #
 
-Vous trouverez ici tous les exercices isolés que nous avons réalisés ensemble en CSS :
+Un exercice pour revoir des notions comme :
 
-- Burger menus
-- Effets de survol
-- Découverte de flex
-- Animation CSS
+- le positionnement
+- ::before & ::after
+- overflow
+- transform
+- les dégradés de fond
 - etc.
 
 [Visualiser le résultat](http://cepegra-labs.be/webdesign/git/isolated/01-hover/index.html)
