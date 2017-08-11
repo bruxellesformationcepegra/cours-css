@@ -1,0 +1,391 @@
+/*  --- GENERALITIES --- */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*::selection {
+	background: #ffc853;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+
+/* Buttons */
+.button {
+	display: inline-block;
+	padding: 20px 40px;
+	border-style: solid;
+	border-width: 2px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: .15em;
+	font-weight: 600;
+}
+.light {
+	border-color: white;
+	color: white;
+}
+.light:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3.5px 0 3.5px 7px;
+	border-color: transparent transparent transparent #ffffff;
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+}
+.dark {
+	border-color: black;
+	color: black;
+}
+
+/* Form */
+input, select, textarea {
+	border: none;
+	border-bottom: 1px solid #b18b41;
+	background: transparent;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	outline: none;
+	padding: 7px 0;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    black;
+    opacity: 1;
+}
+
+/* Layout */
+.half {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.big {
+	height: 682px;
+}
+.small {
+	height: 380px;
+}
+/* Flexed */
+.built-to-last, .more-space, .open-marketplace {
+	display: flex;
+}
+.built-to-last .half:nth-of-type(1), .more-space .half:nth-of-type(1), .open-marketplace .half:nth-of-type(1) {
+	order: 2;
+}
+
+/* --- DETAIL --- */
+/* Header */
+header {
+	height: 790px;
+	background: url('../img/hero.jpg') center 60%;
+	background-size: cover;
+	padding: 36px;
+	position: relative;
+}
+	header nav {
+		position: absolute;
+		top: 36px;
+		right: 36px;
+	}
+		header nav a {
+			color: white;
+			text-transform: uppercase;
+			font-size: 12px;
+			letter-spacing: .15em;
+		}
+		header nav a:last-child {
+			margin-left: 30px;
+		}
+	header img {
+		height: 60px;
+	}
+	.welcome-txt {
+		position: absolute;
+		bottom: 60px;
+		color: white;
+	}
+	header h1 {
+		font-size: 82px;
+		line-height: 95px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	header small {
+		font-size: 24px;
+		text-transform: capitalize;
+		display: block;
+		margin-bottom: 30px;
+		font-weight: 300;
+	}
+
+/* Keep contact */
+.keep-contact {
+	background: #ffc853;
+	padding: 36px 68px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	transition: 1s ease-out all;
+}
+.keep-contact.active {
+	padding: 36px 68px 150px;
+}
+	.keep-contact form > div {
+		display: inline-block;
+		position: relative;
+	}
+	.confirm {
+		position: absolute;
+		left: 0;
+		bottom: -50px;
+		opacity: 0;
+		transition: .5s ease-in-out all .2s;
+	}
+	.confirm.active {
+		opacity: 1;
+	}
+	.confirm label {
+		text-transform: none;
+		width: 500px;
+		position: absolute;
+		left: 20px;
+	}
+	.confirm input {
+		margin-right: 20px;
+	}
+	.keep-contact a {
+		color: black;
+	}
+	.keep-contact label {
+		margin-right: 30px;
+	}
+	.keep-contact input[type="email"] {
+		width: 350px;
+	}
+	.keep-contact input[type="submit"] {
+		border: none;
+		background: url('../img/arrow.png') no-repeat;
+		background-size: cover;
+		width: 15px;
+		height: 10px;
+		cursor: pointer;
+		position: relative;
+		left: -20px;
+		padding: 0;
+	}
+	.follow {
+		background: url('../img/twitter.png') no-repeat left center;
+		background-size: contain;
+		padding-left: 20px;
+	}
+
+/* life change */
+.big h2 {
+	height: 380px;
+	margin: 0;
+	padding: 68px;
+	font-size: 35px;
+	line-height: 60px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+.big h2 ~ .half {
+	height: 302px;
+	padding: 68px;
+	line-height: 28px;
+}
+.big h2 ~ .half img {
+	width: 34px;
+}
+.big h2 ~ .half:nth-of-type(1) {
+	background: #6bd3cc;
+}
+.big h2 ~ .half:nth-of-type(2) {
+	background: #ff4f42;
+}
+.swiper-wrapper, .swiper-slide, .swiper-container {
+	height: 100%;
+}
+.swiper-slide:nth-of-type(1) {
+	background: url('../img/phone1.jpg') no-repeat center;
+	background-size: cover;
+}
+.swiper-slide:nth-of-type(2) {
+	background: url('../img/phone2.jpg') no-repeat center;
+	background-size: cover;
+}
+.swiper-slide:nth-of-type(3) {
+	background: url('../img/phone3.jpg') no-repeat center;
+	background-size: cover;
+}
+.swiper-slide:nth-of-type(4) {
+	background: url('../img/phone4.jpg') no-repeat center;
+	background-size: cover;
+}
+.swiper-slide:nth-of-type(5) {
+	background: url('../img/phone5.jpg') no-repeat center;
+	background-size: cover;
+}
+/* Smalls common properties */
+.small .half:nth-of-type(1) {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 380px;
+}
+.small .half:nth-of-type(2) {
+	height: 380px;
+	padding: 68px;
+}
+.small .half:nth-of-type(2) h2 {
+	margin-bottom: 50px;
+}
+.small .half:nth-of-type(2) p {
+	line-height: 28px;
+	font-weight: 300;
+	width: 75%;
+}
+
+/* mix-match-swap */
+.mix-match-swap .half:nth-of-type(1) {
+	background-image: url('../img/2.jpg');
+}
+
+/* Built to last */
+.built-to-last .half:nth-of-type(1) {
+	background-image: url('../img/03.jpg');
+}
+/* Build with us */
+.build-with-us {
+	background: rgb(107, 211, 204);
+}
+.build-with-us h2 {
+	margin: 0;
+	height: 380px;
+	line-height: 380px;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 600;
+}
+/* More Space. New Ideas. */
+.more-space .half:nth-of-type(1) {
+	background-image: url('../img/04.jpg');
+	background-position: left center;
+}
+/* Hardware’s API */
+.hardware-api .half:nth-of-type(1) {
+	background-image: url('../img/05.png');
+}
+/* Open Marketplace */
+.open-marketplace .half:nth-of-type(1) {
+	background-image: url('../img/06.jpg');
+}
+/* Contact */
+.contact {
+	background: #ffc853;
+	padding: 115px;
+}
+	.contact > div {
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.contact form {
+		margin-top: 50px;
+	}
+		.contact form label {
+			display: block;
+			text-transform: uppercase;
+			letter-spacing: .15em;
+		}
+		.contact form input, .contact form select, .contact form textarea {
+			width: 100%;
+			box-sizing: border-box;
+		}
+		.contact form input[type="submit"] {
+			width: auto;
+			background: url('../img/arrow.png') no-repeat 105px 22px;
+			background-size: 10px 8px;
+			cursor: pointer;
+		}
+		.row {
+			display: flex;
+			margin-bottom: 25px;
+			justify-content: space-between;
+		}
+			.row  div {
+				width: 33%;
+				margin-right: 60px;
+			}
+			.row div:last-child {
+				margin: 0;
+			}
+			.row .double {
+				width: calc(67% + 60px);
+			}
+			.row .full {
+				width: 100%;
+			}
+			.conditions {
+				margin-bottom: 25px;
+			}
+			.contact .conditions label {
+				display: inline-block;
+				width: 95%;
+				text-transform: none;
+				font-weight: 300;
+				font-size: 11px;
+			}
+			.contact .conditions input {
+				display: inline-block;
+				width: 5%;
+			}
+/* Footer */
+footer {
+	display: flex;
+	justify-content: space-between;
+	background: #000;
+	padding: 68px;
+}
+footer img {
+	width: 120px;
+}
+footer a {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+footer a + a {
+	margin-left: 15px;
+}
+footer a:last-child {
+	background: url('../img/twitter-light.png');
+	background-size: 15px 15px;
+	width: 15px;
+	height: 15px;
+}
+
+/* Lightbox */
+.lightbox {
+	display: none;
+}
