@@ -2,7 +2,9 @@
 
 ## Objectif ##
 
-Réussir à reproduire les effets de hover présents sur cette page en utilisant les propriétés CSS suivantes  :
+Réussir à reproduire les effets de survol présents sur cette page.
+
+## Vous aurez besoin de ... ##
 
 - le positionnement
 - ::before & ::after
